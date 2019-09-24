@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Aduane Fie</title>
+	<style>
+
+		html {
+			scroll-behavior: smooth;
+		}
+		.carousel-inner > .carousel-item {
+   			height: 700px;
+		}
+
+		.parallax {
+			  /* The image used */
+  background-image: url("images/pineaple.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+		}
+		
+		.parallax2 {
+						
+  Background-color: white;
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+		}
+
+
+			.parallax-content ul{
+				margin-bottom: 50px;
+			}
+
+			.parallax-content .card{
+				transition: transform .5s;
+			}
+
+			.parallax-content .card:hover {
+				transform: scale(1.1);
+				z-index:1;
+			}
+	</style>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="margin-bottom: 10px;" id="top">
+  		<a class="navbar-brand" href="#">
+			<img src="images/home-delivery.svg" class="img-fluid" style="margin-right: 5px;" width="50" height="auto"> Aduane Fie
+		</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+	<ul class=" mr-auto"></ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="aduaneFie.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contactUs.html">Contact Us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="aduaneGallery.html">Gallery<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+
+       
+
+        <a class="nav-link" href="order.html">Order<span class="sr-only">(current)</span></a>
+      </li>
+	 <li class="nav-item active">
+        <a class="nav-link" href="book-table.html">Book A Table<span class="sr-only">(current)</span></a>
+      </li>
+
+ 	<li class="nav-item active">
+        <a class="nav-link" href="team.html"> Meet the team <span class="sr-only">(current)</span></a>
+
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>	
+		<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+	<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" style="">
+      <div class="carousel-item active">
+        <img src="images/burga1.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>First slide label</h3>
+          <h5>Nulla vitae elit libero, a pharetra augue mollis interdum.</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/burga2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Second slide label</h3>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        </div>
+      </div>
+	<div class="carousel-item">
+        <img src="images/pizza-stretch.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Third slide label</h3>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        </div>
+      	</div>
+      <div class="carousel-item">
+        <img src="images/mix.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Fourth slide label</h3>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="parallax" style="padding-top: 50px; padding-bottom: 50px;">
+	<div class="text-center parallax-content">
+		<h2 style=" margin-bottom: 50px;" class="text-light">Featured Dishes</h2>
+		<ul class="list-inline">
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="1" onClick="onDishClick(this);">
+						<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/julia.jpg" alt="Card image">
+							<h5 class="card-footer" style="margin-bottom: 0px;">Something here</h5>
+						</div>
+			</li>
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="2" onClick="onDishClick(this);">
+										<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/alfredo-sauce.jpg" alt="Card image">
+							<h5 class="card-footer" style="margin-bottom: 0px;"> The Alfredo Sauce</h5>
+						</div>
+			</li>
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="3" onClick="onDishClick(this);">
+												<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/mini-pavlovas.jpg" alt="Card image" style="height:400px;">
+							<h5 class="card-footer" style="margin-bottom: 0px;">mini pavlovas</h5>
+						</div>
+			</li>
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="4" onClick="onDishClick(this);">
+												<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/muffin-flower.jpg" alt="Card image" style="height:400px;">
+							<h5 class="card-footer" style="margin-bottom: 0px;">marviees parfait</h5>
+						</div>
+			</li>
+		</ul>
+			
+				<ul class="list-inline">
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="5" onClick="onDishClick(this);">
+							<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/louis.jpg" alt="Card image" style="height:400px;">
+							<h5 class="card-footer" style="margin-bottom: 0px;">Something here</h5>
+			</li>
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="6" onClick="onDishClick(this);">
+							<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/georgia.jpg" alt="Card image">
+							<h5 class="card-footer" style="margin-bottom: 0px;">Something here</h5>
+						</div>
+			</li>
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="7" onClick="onDishClick(this);">
+							<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/khloe.jpg" alt="Card image" style="height:400px;">
+							<h5 class="card-footer" style="margin-bottom: 0px;">Something here</h5>
+						</div>
+			</li>
+			<li class="list-inline-item" data-toggle="modal" data-target="#exampleModalCenter" id="8" onClick="onDishClick(this);">
+							<div class="card" style="width:400px;">
+  							<img class="card-img-top" src="images/louis.jpg" alt="Card image" style="height:400px;">
+							<h5 class="card-footer" style="margin-bottom: 0px;">Something here</h5>
+						</div>
+			</li>
+		</ul>
+	</div>	
+</div>
+
+<!-- dishes modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	<div>
+		<img src="" class="modal-img img-responsive" style="width:100%; height:700px;">
+	</div>
+	<div class="modal-description" style="padding-top:10px;">
+	
+	</div>
+      </div>
+      <div class="modal-footer">
+	<button type="button" class="btn btn-success">
+		<a href="order.html" style="color: white; text-decoration: none;"> Order</a>
+	</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="parallax2 text-center container">
+<h2 style=" margin-top: 100px; margin-bottom: 20px;" align="center">About Us</h2>
+<p style="font-size:1.2em; color:grey">We offer the best kelewele you can have. Try us!</p>
+</div>
+	</div>
+
+
+	<!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-4 text-light">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold ">Aduane Fie</h6>
+        <p>We believe in a world where you have total freedom to be you, without judgement. To experiment. To express yourself. To be brave and grab life as the extraordinary adventure it is.</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-center">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+	<div class="text-center">
+		        <p>
+          <a href="aduaneFie.html">Home</a>
+        </p>
+        <p>
+          <a href="about.html">About Us</a>
+        </p>
+        <p>
+          <a href="aduaneGallery.html">Gallery</a>
+        </p>
+        <p>
+          <a href="order.html">Order</a>
+        </p>
+	</div>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fa fa-home mr-3"></i> No. 3 Gem Street, Adjiringanor, Accra - Ghana</p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i> aduanefie@gmail.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> + 233 234 567 88</p>
+        <p>
+          <i class="fa fa-print mr-3"></i> + 233 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Footer links -->
+	<div>
+		<button class="btn btn-light scrollupBtn" style="position:absolute; right: 0; margin-right: 20px; border-radius: 50%;">
+			<a href="aduaneFie.html">
+				<i class="fa fa-arrow-up"></i>
+			</a>
+		</button>
+	</div>
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2019 Copyright:
+          <a href="aduaneFie.html">
+            <strong> AduaneFie.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+	<!-- custom js -->
+	<script>
+		const DISHES = [ 
+
+					{id:1, name: 'Baked Bread', description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.", image:"julia.jpg"},
+					{id:2, name: 'The Alfredo Sauce', description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200", image: "alfredo-sauce.jpg"},
+ 					{id:3, name:'mini pavlovas', description: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)", image:"mini-pavlovas.jpg"},
+
+ 					{id:4, name:'marviees parfait', description: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)", image:"muffin-flower.jpg"},
+
+ 					{id:5, name:'Something here', description: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)", image:"louis.jpg"},
+
+ 					{id:6, name:'Something here', description: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)", image:"georgia.jpg"},
+
+ 					{id:7, name:'Something here', description: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)", image:"khloe.jpg"},
+
+ 					{id:8, name:'Something here', description: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)", image:"louis.jpg"}
+
+
+				 ];
+		const getDish = (id) => {
+			return DISHES.filter((dish) => (dish.id == id))[0]
+		};
+		function onDishClick(dish) {
+			const selectedDish = getDish(dish.id);
+			    // e.preventDefault();
+    			var mymodal = $('#exampleModalCenter');
+    			mymodal.find('.modal-title').text(selectedDish.name);
+			mymodal.find('.modal-img').attr("src", "images/" + selectedDish.image);
+			mymodal.find('.modal-description').text(selectedDish.description);
+
+    			mymodal.modal('show');
+		}
+
+
+	</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

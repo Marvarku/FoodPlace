@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>3D Our Team Page Concept</title>
+
+<style>
+
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+}
+
+body {
+      color: #fff;
+      background: url(images/69.png) no-repeat 50% 50%;
+      background-size: cover;
+      overflow-x: hidden;
+}
+
+#wrap {
+      width: 980px;
+      left: -490px;
+      top: 6%;
+      margin-top: 52px;
+      margin-left: 50%;
+      position: relative;
+}
+
+#showcase {
+      width: 100%;
+      height: 460px;
+}
+
+#showcase img {
+      cursor: pointer;
+      opacity: 0.6;
+}
+
+#item-title {
+      color: #fff;
+      font-size: 30px;
+      letter-spacing: 0.13em;
+      text-align: center;
+      margin-top: -20px;
+      margin-bottom: 32px;
+      font-family: monospace;
+}
+
+.na {
+      text-align: center;
+     
+}
+
+.na > button {
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      text-align: center;
+      background: #000;
+      border: none;
+      cursor: pointer;
+}
+
+.na > button:focus {
+      border: none;
+      outline: none;
+}
+
+
+</style>
+
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <!-- font-awesome icons -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Jquery CDN -->
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+      <!-- Plugin  -->
+      <script src="jquery.reflection.js"></script>
+      <script src="jquery.cloud9carousel.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="margin-bottom: 10px;">
+  		<a class="navbar-brand" href="#">
+			<img src="images/home-delivery.svg" class="img-fluid" style="margin-right: 5px;" width="50" height="auto"> Aduane Fie
+		</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+	<ul class=" mr-auto"></ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link"  <a href="aduaneFie.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contactUs.html">Contact Us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="aduaneGallery.html">Gallery<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="order.html">Order<span class="sr-only">(current)</span></a>
+      </li>
+	 <li class="nav-item active">
+        <a class="nav-link" href="book-table.html">Book A Table<span class="sr-only">(current)</span></a>
+      </li>
+ <li class="nav-item active">
+        <a class="nav-link"  <a href="team.html"> Meet the team <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>	
+
+
+
+
+      <div id="wrap">
+            <div id="showcase">
+                 <img src="images/team/c2.png" alt="Josh Project Manager" class="cloud9-item">
+                  <img src="images/team/c4.png" alt="Vincent Snr.Andriod developer" class="cloud9-item">
+                  <img src="images/team/c3.png" alt="Marvie Snr.Android developer" class="cloud9-item">
+                  <img src="images/team/c1.png" alt="Akwasi FullStack Developer" class="cloud9-item">
+                  <img src="images/team/c5.png" alt="William FullStack Developer" class="cloud9-item">
+                  <img src="images/team/c6.png" alt="Kwaku  Snr.Devops Engineer" class="cloud9-item">
+            </div>
+
+            <p id="item-title">&nbsp;</p>
+
+            <div class="na noselect">
+                  <button class="left"><i class="fa fa-arrow-left"></i></button>
+                  <button class="right"><i class="fa fa-arrow-right"></i></button>
+            </div>
+
+      </div>
+
+      <script type="text/javascript">
+
+      $(function() {
+            var showcase = $("#showcase")
+
+            showcase.Cloud9Carousel( {
+                  yPos: 42,
+                  yRadius: 48,
+                  mirrorOptions: {
+                        gap: 12,
+                        height: 0.2
+                  },
+                  buttonLeft: $(".na > .left"),
+                  buttonRight: $(".na > .right"),
+                  autoPlay: true,
+                  bringToFront: true,
+
+                  onRendered: showcaseUpdated,
+                  onLoaded: function() {
+                        showcase.css( 'visibility', 'visible' )
+                        showcase.css( 'display', 'none')
+                        showcase.fadeIn( 1500 )
+                  }
+            })
+
+            function showcaseUpdated( showcase ) {
+                  var title = $("#item-title").html(
+                        $(showcase.nearestItem()).attr( 'alt' )
+                  )
+
+                  var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+                  title.css('opacity', 0.5 + (0.5 * c))
+            }
+
+            $('.nav > button').click( function( e ) {
+                  var b = $(e.target).addClass( 'down' )
+                  setTimeout( function() { b.removeClass( 'down' ) }, 80)
+            } )
+
+            $(document).keydown( function( e ) {
+                  switch( e.keyCode ) {
+                        case 37:
+                        $('.na > .left').click()
+                        break
+
+                        case 39:
+                        $('.na > .right').click()
+                  }
+            })
+      })
+
+      </script>
+</body>
+</html>
